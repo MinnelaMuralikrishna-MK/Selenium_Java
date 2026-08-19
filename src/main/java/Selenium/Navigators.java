@@ -1,6 +1,5 @@
 package Selenium;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -9,7 +8,7 @@ public class Navigators
     public static void main(String[] args)throws InterruptedException
     {
         WebDriver driver;
-        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         System.out.println("Selenium driver started");
         driver.get("https://www.google.com");

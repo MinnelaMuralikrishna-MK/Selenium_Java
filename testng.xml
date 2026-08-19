@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium Test Suite" parallel="false" verbose="2">
+
+    <test name="Gmail Tests">
+        <classes>
+            <class name="Selenium_Test.Gmail"/>
+        </classes>
+    </test>
+
+    <test name="Unit Tests">
+        <classes>
+            <class name="Selenium_Test.Tes_1_Unittesting"/>
+        </classes>
+    </test>
+
+    <test name="Java Tests">
+        <classes>
+            <class name="Java_Test.Test_4_mail"/>
+        </classes>
+    </test>
+
+</suite>
