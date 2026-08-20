@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class POM_Test
+public class POM_Test_Group
 {
     WebDriver driver;
     POM_Text textBoxPage;
@@ -26,7 +26,7 @@ public class POM_Test
         textBoxPage = new POM_Text(driver);
     }
 
-    @Test(priority = 1)
+    @Test(groups = {"smoke","regression"})
     public void testForm()
     {
         textBoxPage.enterfirstname("Minnela");
@@ -34,11 +34,6 @@ public class POM_Test
         textBoxPage.enterUsername("MinnelaMK");
         textBoxPage.enterPassword("06129899");
         textBoxPage.clickbutton();
-
-//        String result = textBoxPage.getOutput();
-//        System.out.println("Output: '" + result + "'");
-//        Assert.assertTrue(result.contains("Minnela"), "First Name mismatch: " + result);
-//        Assert.assertTrue(result.contains("Muralikrishna"), "Second Name mismatch: " + result);
     }
 
     @AfterMethod
